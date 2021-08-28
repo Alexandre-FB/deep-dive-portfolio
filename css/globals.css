@@ -20,6 +20,10 @@ body {
   margin: auto;
 }
 
+.section {
+  padding: 50px 0;
+}
+
 .btn {
   padding: 10px 25px;
   font-size: 1.6rem;
@@ -87,4 +91,31 @@ body {
 
 .social-links a:after {
   border-radius: 50%;
+}
+
+.effect-circle {
+  width: 150px;
+  height: 150px;
+  border: 25px solid #fb839e;
+  border-radius: 50%;
+  left: 75%;
+  top: -220px;
+}
+
+.effect-triangles {
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  left: 35%;
+  top: 30%;
+  animation: spin 10s linear infinite;
+}
+
+.effect-triangles:after {
+  content: '';
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  position: absolute;
+  opacity: 0.5;
+  left: -35px;
+  top: -25px;
 }
